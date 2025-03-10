@@ -1,0 +1,19 @@
+/* Estilo base para la galería */
+.galeria {
+    display: grid; /* Habilita el sistema de rejilla */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr; /* Cambia a 1 columna */
+    }
+}
+
+/* Estilo para las imágenes */
+.galeria img {
+    max-width: 100%; /* Las imágenes se ajustan al contenedor */
+    height: auto; /* Mantienen su proporción */
+}
